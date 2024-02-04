@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임할땐 게임톡</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1920px;
+			height: 1080px; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .login-box {
+            width: 740px;
+            
+        }
+
+        /* 추가적인 스타일 설정 가능 */
+        input[type="text"],
+        input[type="password"] {
+            width: 600px;
+            padding: 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #F7F7F7; /* 디스코드의 파란색과 유사한 색상 사용 */
+            border-radius: 4px;
+            background-color: #F7F7F7;
+            color: #ffffff;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 4px;
+            background-color: #7289da;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+        <img src="img/title.logo.png" style="width:900px; margin-left: 10px;" >
+               <form action="login.jsp?=email" method="post" id="login-form">
+               <table align="center">
+               		<tr>
+						<td align="center">
+							<a>온라인 게임을 즐기며</a><br>
+							<a>친구와 음성채팅으로 작전을 짜보세요!</a>
+						</td>
+						
+						<td rowspan="4">
+							<img src="img/QRcode.png"  style="margin-bottom: -55px; width:260px;"><br>
+						</td>
+					</tr>
+					
+					<tr>
+						<td><br>이메일 또는 전화번호<br><input type="text" name="email"></td>
+					</tr>		
+					<tr>
+						<td>비밀번호<br><input type="password" name="pwd"><br>
+							<a href="#">비밀번호를 잊으셨나요?</a></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="login" value="로그인"><br>
+												
+						<br>계정이 필요한가요?<a href="#">가입하기</a></td>
+					</tr>
+			</table>
+			</form>
+        </div>
+    </div>
+</body>
+</html>
